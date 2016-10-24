@@ -1,0 +1,414 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+html,body,{
+	width: 100%;
+	height: 100%;
+}
+
+.lightboxtop{
+	width: 100%;
+	height: 5%;
+	position: absolute;
+	top: 1%;
+	left: 0%;
+	overflow: hidden;
+	z-index: 99;
+}
+.lightboxbottom{
+	width: 100%;
+	height: 5%;
+	position: absolute;
+	bottom: 1%;
+	left: 0%;
+	overflow: hidden;
+	z-index: 99;
+}
+.content{
+	position: absolute;
+}
+
+.content .page{
+	position: relative;
+	background: rgba(0,0,0,0.7);
+}
+
+.musicBtn{
+	width: 13%;
+	height: 8%;
+	position:absolute;
+	right: 5%;
+	top: 3%;
+	animation:music 2s linear infinite;
+	z-index: 99;
+}
+
+@keyframes music{
+	from{}
+	to{transform:rotate(360deg);}
+}
+
+.up {
+	width: 20%;
+	height: 10%;
+	position: absolute;
+	left: 40%;
+	bottom: 5%;
+	animation: allow 2s infinite;
+}
+
+@keyframes allow{
+	0%{}
+	50%{bottom:3%;}
+	100%{bottom:5%;}
+}
+
+.toplight{
+	width: 200%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: -100%;
+	overflow: hidden;
+}
+.bottomlight{
+	width: 200%;
+	height: 100%;
+	position: absolute;
+	bottom: 0%;
+	left: -100%;
+	overflow: hidden;
+}
+.page1-1{
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	top: 35%;
+	left: 5%;
+	display: none;
+}
+
+.page1-2{
+	width:30%;
+	height: 25%;
+	position: absolute;
+	left: 0px;
+	bottom: 5%;
+	display: none;
+}
+
+.page1-3{
+	width: 80%;
+	height: 40%;
+	position: absolute;
+	left: 10%;
+	bottom: 2%;
+	display: none;
+}
+
+.page1-4{
+	width: 90%;
+	height: 50%;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	animation: roundbulb 1s infinite;
+}
+
+@keyframes roundbulb {
+	0%{}
+	50%{transform: scale(0.8);}
+	100%{transform: scale(1);}
+}
+
+.page1-5 {
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	right: 0px;
+	bottom: 5%;
+	display: none;
+}
+
+.page1-6{
+	width: 10%;
+	height: 6%;
+	position: absolute;
+	left: 10%;
+	bottom: 50%;
+	opacity: 0;
+	animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+	from{}
+	to{transform: rotate(360deg);}
+}
+.page1-7{
+	width: 15%;
+	height: 9%;
+	position: absolute;
+	right: 5%;
+	top: 20%;
+	opacity: 0;
+	animation: rotate 3s linear infinite;
+}
+.page2-1{
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	top: 22.5%;
+	left:37.5%;
+	z-index: 99;
+	opacity: 0;
+}
+
+.page2-2{
+	width: 90%;
+	height: 30%;
+	position: absolute;
+	left: 5%;
+	bottom: 7%;
+	display: none;
+}
+.page2-3 {
+	width: 45%;
+	height: 30%;
+	position: absolute;
+	left: 25%;
+	top: 20%;
+	opacity: 0;
+}
+.page2-4{
+	width: 75%;
+	height: 20%;
+	position: absolute;
+	left: 12.5%;
+	bottom: 8%;
+	display: none;
+}
+
+.page3-1{
+	width:100%;
+	height: 50%;
+	position: absolute;
+	left: 0%;
+	top: 5%;
+	display: none;
+}
+
+.page3-2{
+	width: 25%;
+	height: 20%;
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	opacity: 0;
+}
+
+.page3-3{
+	width: 30%;
+	height: 20%;
+	position: absolute;
+	right: 5%;
+	bottom: 20%;
+	animation: updown 3s infinite;
+	display: none;
+}
+
+@keyframes updown{
+	0%{}
+	25%{bottom:24%;}
+	50%{bottom:20%;}
+	75%{bottom:22%;}
+	100%{bottom:20%;}
+}
+.page3-4{
+	width: 90%;
+	height: 40%;
+	position: absolute;
+	left: 100%;
+	bottom: 5%;
+}
+
+.page4-1{
+	width: 90%;
+	height: 50%;
+	position: absolute;
+	left: 5%;
+	top: 3%;
+	display: none;
+	animation: rotate 2s linear both;
+}
+
+.page4-2{
+	width: 40%;
+	height: 20%;
+	position: absolute;
+	left: 30%;
+	top: 25%;
+	display: none;
+}
+
+.page4-3{
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	display: none;
+	animation: showhidden 1s  linear infinite;
+}
+
+@keyframes showhidden{
+	0%{opacity: 1;}
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+.page4-4{
+	width: 25%;
+	height: 15%;
+	position: absolute;
+	right: 15%;
+	bottom: 40%;
+	display: none;
+}
+
+.page4-5{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	left: 0%;
+	bottom: 2%;
+	display: none;
+}
+
+.page5-1{
+	width: 100%;
+	height: 75%;
+	position: absolute;
+	left: 0%;
+	top: -75%;
+	opacity: 0;
+}
+
+.page5-2{
+	width: 30%;
+	height: 15%;
+	position: absolute;
+	right: 5%;
+	top: 45%;
+	animation: showhidden 1s linear infinite;
+	z-index: 99;
+}
+
+.page5-3{
+	width: 80%;
+	height: 30%;
+	position: absolute;
+	left: 15%;
+	top: 18%;
+	display: none;
+	animation: showhidden 2s linear both;
+}
+
+.page5-4{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	right: -100%;
+	bottom: 0%;
+}
+.page6-1{
+	width: 100%;
+	height: 40%;
+	position: absolute;
+	left: 0%;
+	top: -40%;
+	opacity: 0;
+}
+
+.page6-2{
+	width: 80%;
+	height: 15%;
+	position: absolute;
+	left: 6%;
+	top: 10%;
+	display: none;
+}
+
+.page6-3{
+	width: 35%;
+	height: 25%;
+	position: absolute;
+	left: 0%;
+	top: 35%;
+	display: none;
+}
+
+.page6-4{
+	width: 80%;
+	height: 40%;
+	position: absolute;
+	right: 0%;
+	bottom: 15%;
+	display: none;
+}
+.page6-5{
+	width: 45%;
+	height: 25%;
+	position: absolute;
+	right: 18%;
+	bottom: 22%;
+	display: none;
+}
+
+.page6-6{
+	width: 28%;
+	height: 18%;
+	position: absolute;
+	left: 5%;
+	bottom: 2%;
+	animation: rotate1 2s linear infinite;
+	transform-origin: bottom;
+}
+
+@keyframes rotate1{
+	0%{}
+	25%{transform: rotate(-20deg);}
+	50%{transform: rotate(0deg);}
+	75%{transform: rotate(20deg);}
+	100%{transform: rotate(0deg);}
+}
+
+.page7-1{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	left: 0%;
+	top: -30%;
+	opacity: 0;
+}
+
+.page7-2{
+	width: 100%;
+	height: 65%;
+	position: absolute;
+	left: 0%;
+	bottom: 5%;
+	display: none;
+	animation: roundbulb 2s linear 2;
+}
+
+.author{
+	width: 60%;
+	height: 20%;
+	position: absolute;
+	bottom: 18%;
+	left: 18%;
+	display: none;
+}
